@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher B. Losaria Jr. | Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qwerty.css"> 
+
+    <style>
+        /* Lightbox Modal CSS */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        } 
+
+        .lightbox:target {
+            display: flex;
+        } 
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head> 
+
+<body id="top"> 
+
+    <nav>
+        <div class="nav-container">
+            <div class="brand">BSIT<span>2E</span></div>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav> 
+
+    <header id="home">
+        <div class="hero-content">
+            <div class="avatar-wrapper">
+                <a href="#hero-img-full">
+                    <img id="Me" src="Me.jpg" alt="Christopher B. Losaria Jr.">
+                </a>
+            </div>
+            <h1 class="glitch-title">Welcome to My Space</h1>
+            <p class="status-badge"><span class="pulse"></span> ONLINE | STREAMER &amp; GAMER</p>
+            <p class="hero-subtext">Hi, I'm <strong>Christopher B. Losaria Jr.</strong> — Student, Streamer &amp; Gamer.</p>
+        </div>
+    </header> 
+
+    <main>
+        <section id="about" class="hud-card">
+            <h2>About Myself</h2>
+            <p>
+                Hello! My name is <strong>Christopher B. Losaria Jr.</strong>, but everyone calls me <strong>Chris</strong> (or <strong>Plong</strong> to my family). 
+                I come from <strong>Brgy. Dolis, Calatrava, Neg. Occ.</strong> and I turn 21 this coming September!
+            </p>
+            <p>
+                Currently, I am a second-year student at <strong>Central Philippines State University (San Carlos Campus)</strong>. 
+                In my free time, I enjoy live streaming as a hobby and playing mobile games—especially <strong>PUBGM</strong>.
+            </p>
+        </section> 
+
+        <section id="skills" class="hud-card">
+            <h2>Skills &amp; Expertise</h2>
+            <ul class="skills-list">
+                <li><strong>PUBGM Game Strategy:</strong> In-game tactical leader focused on map awareness, quick decision-making, and squad coordination.</li>
+                <li><strong>SMAW Welding:</strong> CSHS graduate skilled in Shielded Metal Arc Welding, metal fabrication, and safe shop operations.</li>
+                <li><strong>Chainsaw Operation:</strong> Experienced in timber cutting, safety protocols, and milling raw logs into clean wood slabs.</li>
+            </ul>
+        </section> 
+
+        <section id="gallery">
+            <h2>Gallery</h2> 
+
+            <div class="gallery-container">
+                <article class="hud-card gallery-item">
+                    <div class="img-container">
+                        <a href="#img1">
+                            <img src="Pubg.jpg" alt="PUBGM Account">
+                        </a>
+                    </div>
+                    <h3>PUBGM Acc</h3>
+                </article> 
+
+                <article class="hud-card gallery-item">
+                    <div class="img-container">
+                        <a href="#img2">
+                            <img src="Me.jpg" alt="Profile Picture">
+                        </a>
+                    </div>
+                    <h3>Picture</h3>
+                </article> 
+
+                <article class="hud-card gallery-item">
+                    <div class="img-container">
+                        <a href="#img3">
+                            <img src="House.jpg" alt="PUBGM House">
+                        </a>
+                    </div>
+                    <h3>PUBGM House</h3>
+                </article> 
+
+                <article class="hud-card gallery-item">
+                    <div class="img-container">
+                        <a href="#img4">
+                            <img src="me2.jpg" alt="Gallery Image 4">
+                        </a>
+                    </div>
+                    <h3>Me</h3>
+                </article> 
+
+                <article class="hud-card gallery-item">
+                    <div class="img-container">
+                        <a href="#img5">
+                            <img src="fam.jpg" alt="Gallery Image 5">
+                        </a>
+                    </div>
+                    <h3>Family</h3>
+                </article> 
+
+                <article class="hud-card gallery-item">
+                    <div class="img-container">
+                        <a href="#img6">
+                            <img src="me3.jpg" alt="Gallery Image 6">
+                        </a>
+                    </div>
+                    <h3>Me</h3>
+                </article>
+            </div>
+        </section> 
+
+        <section id="contact" class="hud-card">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me for collaborations, streaming, or gaming:</p>
+            <p><strong>Phone / Contact Number:</strong> <a href="tel:09976016616">09976016616</a></p>
+        </section>
+    </main> 
+
+    <footer>
+        <p>&copy; 2026 Christopher B. Losaria Jr. // ALL RIGHTS RESERVED.</p>
+    </footer> 
+
+    <!-- Lightbox Overlays -->
+    <a href="#home" class="lightbox" id="hero-img-full"><img src="Me.jpg" alt="Christopher B. Losaria Jr."></a>
+    <a href="#gallery" class="lightbox" id="img1"><img src="Pubg.jpg" alt="PUBGM Account"></a>
+    <a href="#gallery" class="lightbox" id="img2"><img src="Me.jpg" alt="Profile Picture"></a>
+    <a href="#gallery" class="lightbox" id="img3"><img src="House.jpg" alt="PUBGM House"></a>
+    <a href="#gallery" class="lightbox" id="img4"><img src="me2.jpg" alt="Gallery Image 4"></a>
+    <a href="#gallery" class="lightbox" id="img5"><img src="fam.jpg" alt="Gallery Image 5"></a>
+    <a href="#gallery" class="lightbox" id="img6"><img src="me3.jpg" alt="Gallery Image 6"></a> 
+
+</body>
+</html>
